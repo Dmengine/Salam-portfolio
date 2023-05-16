@@ -4,6 +4,7 @@
 import { useState } from "react"
 import React from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
+import Link from "next/link"
 
 export default function Menu() {
 
@@ -14,14 +15,16 @@ export default function Menu() {
     };
   return (
     <div>
-        <AiOutlineMenu onClick={toggleMenu} />
+        <div className="text-gray-400 justify-end p-10">
+            <AiOutlineMenu onClick={toggleMenu}/>
+        </div>
         {menu && (
-            <div>
-                <ul>
-                    <li className="">Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+            <div className="relative w-full lg:max-w-sm pr-3">
+                <ul className="w-full p-2.5 text-gray-100 bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-900">
+                    <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">Home</li>
+                    <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">About</li>
+                    <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">Projects</li>
+                    <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">Contact</li>
                 </ul>
             </div>
         )}
