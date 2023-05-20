@@ -15,11 +15,11 @@ export default function Menu() {
     };
   return (
     <div>
-        <div className="text-gray-400 justify-end p-10">
+        <div className="text-gray-200 justify-end p-10">
             <AiOutlineMenu onClick={toggleMenu}/>
         </div>
         {menu && (
-            <div className="relative w-full lg:max-w-sm pr-3">
+            <div className="w-full lg:max-w-sm pr-3">
                 <ul className="w-full p-2.5 text-gray-100 bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-900">
                     <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">Home</li>
                     <li className="px-4 py-2 text-sm text-gray-300 hover:text-gray-700 hover:bg-gray-50 rounded-1-md">About</li>

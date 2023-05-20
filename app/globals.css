@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.p{
+    @apply justify-center items-center text-xs sm:text-lg pb-5 tracking-wide sm:pl-32 text-gray-300;
+}

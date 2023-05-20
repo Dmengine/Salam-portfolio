@@ -1,36 +1,47 @@
 import Image from 'next/image'
 import React from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
-import Menu from './Menu'
 
 export default function Section2() {
   return (
-    <div className='flex transition duration-75 bg-gray-900'>
-      <div className=' w-2/3 h-screen bg-gray-900 relative items-center justify-center'>
-        <header className='pb-6 bg-gray-900'>
-          <h2 className='font-bold text-2xl p-14 py-8 text-lime-500'> Salam </h2>
-        </header>
-        <div className='justify-center items-center bg-gray-900 '>
-          <h1 className='py-4 justify-center items-center pl-32 font-bold sm:text-6xl text-lime-500'>Fullstack <br/> Developer.</h1>
-          <p className='justify-center item content-center text-sm sm:text-lg pt-2 pl-32 text-gray-300'>I like to craft solid and scalable frontend <br/> products with great user experiences..</p>
-          <div className='flex'>
-            <ul className='pt-5 text-gray-300 items-center flex justify-between pl-28'>
-              <li className='p-10 text-sm'>Highly skilled at progressive <br/> enhancement, design <br/> systems & UI Engineering.</li>
-              <li className='text-sm '>Proven experience building <br/> successful products for <br/> clients across several <br/> countries.</li>
-            </ul>
-          </div>
+    <div className='sm:flex bg-indigo-700'>
+        <div className=''>
+            <h1 className='pb-1 justify-center items-center pl-10 pt-8 sm:pl-32 font-bold sm:text-6xl text-lime-500  text-4xl'>
+                Over the <span className='sm:block'> years,</span>
+            </h1>
+            <div className='justify-center items-center p-10'>
+            <p className='p'>
+                I've built products for companies and businesses <br/> 
+                around the globe ranging from marketing websites to <br/> 
+                complex solutions and enterprise apps with focus on <br/>
+                fast, elegant and accessible user experiences.
+            </p>
+            <p className='p'>
+                Currently, I work at Shopify as a Senior Frontend <br/> 
+                Engineer crafting thoughtful and inclusive <br/> 
+                experiences that adhere to web standards for over 3 <br/> 
+                million merchants across the world.
+            </p>
+            <p className='p'>
+                Before now, I was Principal Frontend Engineer at <br/>
+                hello tax, where I worked on a suite of tools and <br/>
+                services tailored towards automated VAT compliance <br/>
+                for multi-channel sellers in Europe.
+            </p>
+            <p className='p'>
+                Prior to hello tax, I was Senior frontend engineering <br/>
+                consultant with Pixel2HTML, building JavaScript <br/>
+                applications and interfaces for orgs and individuals.
+            </p>
+            </div>
         </div>
-      </div>
-      <div className='bg-gray-900 w-1/3  relative h-screen pt-10 flex'>
-        <Image
-        src='undraw_cloud_hosting_7xb1.svg'
-        width={500} 
-        height={500}
-        className=' justify-center items-center'
-        />
-      </div>
-      <Menu/>
-    </div>  
-    
+        <div>
+            <Image 
+                src='undraw_cloud_hosting_7xb1.svg'
+                width={500}
+                height={200}
+                className='justify-center items-center pt-10 p-5'
+                />
+        </div>
+    </div>
   )
 }
