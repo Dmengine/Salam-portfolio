@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
-import Menu from './Menu'
+
 
 export default function Section1() {
   return (

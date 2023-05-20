@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Section2() {
   return (
-    <div className='sm:flex bg-indigo-700'>
+    <div className='sm:flex bg-indigo-700 '>
         <div className=''>
             <h1 className='pb-1 justify-center items-center pl-10 pt-8 sm:pl-32 font-bold sm:text-6xl text-lime-500  text-4xl'>
                 Over the <span className='sm:block'> years,</span>
