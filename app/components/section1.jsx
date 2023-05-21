@@ -9,7 +9,7 @@ export default function Section1() {
         <div className='justify-center items-center'>
           <h1 className='p-10 justify-center items-center  font-bold text-4xl sm:text-6xl text-lime-500'>Fullstack <br/> Developer.</h1>
           <p className=' text-lg text-gray-300 p-10 pt-2'>I like to craft solid and scalable frontend products with great user experiences</p>
-          <div className='flex justify-center items-center space-x-3 p-10 sm:p-4 alignm'>
+          <div className='flex justify-center items-center space-x-3 p-10 sm:p-4'>
             <p className='text-gray-300 p-4 sm:p-2'>
               Highly skilled at progressive <span className='block'>enhancement, design systems &  UI Engineering.</span>
             </p>
