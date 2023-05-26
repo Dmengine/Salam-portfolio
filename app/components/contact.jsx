@@ -47,14 +47,16 @@ export default function Contact() {
           <input
             type='text'
             placeholder='Name'
+            name='user_name'
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
             className='mb-5 ml-10 p-1'
           />
           <input
-            type='text'
+            type='email'
             placeholder='Email'
+            name='user_email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -62,8 +64,9 @@ export default function Contact() {
           />
         </div>
         <input
-          type='text'
+          type='message'
           placeholder='Message'
+          name='message'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
@@ -72,6 +75,7 @@ export default function Contact() {
         <button
           className='bg-white text-indigo-700 flex text-xs border border-indigo-500 hover:text-white font-semibold rounded-sm ml-10 sm:ml-28 hover:bg-indigo-900 p-3 uppercase items-center justify-center'
           type='submit'
+          value={message}
         >
           Shoot
           <BsArrowRight className='items-center justify-center m-1 text-2xl' />
