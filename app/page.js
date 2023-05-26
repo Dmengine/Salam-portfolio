@@ -8,7 +8,7 @@ import Contact from './components/contact'
 export default function Home() {
   return (
     <main>
-      <div className=''>
+      <div>
         <Header/>
         <Section1 />
         <Section2 />

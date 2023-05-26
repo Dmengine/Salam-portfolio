@@ -39,6 +39,7 @@ export default function Section2() {
                 src='undraw_cloud_hosting_7xb1.svg'
                 width={500}
                 height={200}
+                alt='cloud hosting'
                 className='justify-center items-center pt-10 p-5'
                 />
         </div>
