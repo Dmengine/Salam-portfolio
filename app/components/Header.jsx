@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{lazy} from 'react'
 import Menu from './Menu'
 
 export default function Header() {
