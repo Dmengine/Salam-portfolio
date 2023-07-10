@@ -1,11 +1,27 @@
-import React,{lazy} from 'react'
-import Menu from './Menu'
+'use client'
+
+import React, { lazy } from 'react';
+import { motion } from 'framer-motion';
+import Menu from './Menu';
 
 export default function Header() {
+  const headerVariants = {
+    initial: { opacity: 1, y: -30 },
+    animate: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className='flex justify-between items-center bg-gray-900'>
-         <h2 className='font-bold text-2xl p-14 py-8 text-lime-500'> Salam </h2>
-         <Menu/>
-    </div>
-  )
+    <motion.div
+      className='flex justify-between items-center bg-gray-900'
+    >
+      <motion.h2
+        className='font-bold text-2xl p-14 py-8 text-lime-500'
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        Salam
+      </motion.h2>
+      <Menu />
+    </motion.div>
+  );
 }

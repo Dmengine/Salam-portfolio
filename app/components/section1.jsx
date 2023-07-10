@@ -1,33 +1,91 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
 
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 export default function Section1() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.8 } },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, delay: 0.2 },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, delay: 0.4 },
+    },
+  };
+
   return (
-    <div className='sm:flex bg-gray-900 '>
+    <div className='sm:flex bg-gray-900'>
       <div className='relative'>
-        <div className='justify-center items-center'>
-          <h1 className='p-10 justify-center items-center  font-bold text-4xl sm:text-6xl text-lime-500'>Fullstack <br/> Developer.</h1>
-          <p className=' text-lg text-gray-300 p-10 pt-2'>I like to craft solid and scalable frontend products with great user experiences</p>
-          <div className='flex justify-center items-center space-x-3 p-10 sm:p-4'>
-            <p className='text-gray-300 p-4 sm:p-2'>
-              Highly skilled at progressive <span className='block'>enhancement, design systems &  UI Engineering.</span>
-            </p>
-            <p className='text-gray-300 p-4'>
-              Proven experience building successful <span className='sm:block'> products for clients across several countries.</span>
-            </p>
-          </div>
-        </div>
+        <motion.div
+          ref={ref}
+          className='justify-center items-center'
+          initial='hidden'
+          animate={inView ? 'visible' : 'hidden'}
+          variants={containerVariants}
+        >
+          <motion.h1
+            className='p-10 justify-center items-center font-bold text-4xl sm:text-6xl text-lime-500'
+            variants={textVariants}
+          >
+            Fullstack <br /> Developer.
+          </motion.h1>
+          <motion.p
+            className='text-lg text-gray-300 p-10 pt-2'
+            variants={textVariants}
+          >
+            I like to craft solid and scalable frontend products with great user experiences
+          </motion.p>
+          <motion.div
+            className='flex justify-center items-center space-x-3 p-10 sm:p-4'
+            variants={textVariants}
+          >
+            <motion.p className='text-gray-300 p-4 sm:p-2'>
+              Highly skilled at progressive{' '}
+              <span className='block'>enhancement, design systems & UI Engineering.</span>
+            </motion.p>
+            <motion.p className='text-gray-300 p-4'>
+              Proven experience building successful{' '}
+              <span className='sm:block'> products for clients across several countries.</span>
+            </motion.p>
+          </motion.div>
+        </motion.div>
       </div>
       <div className='bg-gray-900 p-5'>
-        <Image
-        src='undraw_cloud_hosting_7xb1.svg'
-        width={500} 
-        height={500}
-        alt='cloud hosting'
-        className=' justify-center items-center'
-        />
+        <motion.div
+          initial='hidden'
+          animate={inView ? 'visible' : 'hidden'}
+          variants={imageVariants}
+        >
+          <Image
+            src='/undraw_cloud_hosting_7xb1.svg'
+            width={500}
+            height={500}
+            alt='cloud hosting'
+            className='justify-center items-center'
+          />
+        </motion.div>
       </div>
     </div>
-  )
+  );
 }
