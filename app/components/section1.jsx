@@ -35,15 +35,15 @@ export default function Section1() {
   };
 
   return (
-    <div className='sm:flex bg-gray-900'>
-      <div className='relative'>
-        <motion.div
-          ref={ref}
-          className='justify-center items-center'
-          initial='hidden'
-          animate={inView ? 'visible' : 'hidden'}
-          variants={containerVariants}
-        >
+    <div className='sm:flex bg-gradient-to-r from-blue-500 to-purple-600'>
+      <motion.div
+        className='relative flex-1 bg-gradient-to-r from-blue-500 to-purple-600'
+        ref={ref}
+        initial='hidden'
+        animate={inView ? 'visible' : 'hidden'}
+        variants={containerVariants}
+      >
+        <motion.div className='justify-center items-center'>
           <motion.h1
             className='p-10 justify-center items-center font-bold text-4xl sm:text-6xl text-lime-500'
             variants={textVariants}
@@ -70,8 +70,8 @@ export default function Section1() {
             </motion.p>
           </motion.div>
         </motion.div>
-      </div>
-      <div className='bg-gray-900 p-5'>
+      </motion.div>
+      <div className='bg-gradient-to-r from-purple-600 to-blue-500 p-5'>
         <motion.div
           initial='hidden'
           animate={inView ? 'visible' : 'hidden'}
@@ -89,3 +89,4 @@ export default function Section1() {
     </div>
   );
 }
+

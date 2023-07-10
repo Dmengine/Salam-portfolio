@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <motion.div
-      className='flex justify-between items-center bg-gray-900'
+      className='flex justify-between items-center bg-gradient-to-r from-blue-500 to-purple-600'
     >
       <motion.h2
         className='font-bold text-2xl p-14 py-8 text-lime-500'
