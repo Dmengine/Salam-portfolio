@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <motion.div
-      className='flex justify-between items-center bg-gradient-to-r from-blue-500 to-purple-600'
+      className='flex items-center bg-gradient-to-r from-blue-500 to-purple-600 justify-between'
     >
       <motion.h2
         className='font-bold text-2xl p-14 py-8 text-lime-500'
@@ -21,7 +21,28 @@ export default function Header() {
       >
         Salam
       </motion.h2>
-      <Menu />
+      <motion.div className='justify-evenly items-center flex'>
+        <motion.h2 
+          className='font-bold text-2xl p-14 py-8 text-lime-500'
+          whileHover={{scale: 1.1}}
+          whileTap={{ scale: 0.9}}
+          >
+            About
+          </motion.h2>
+        <motion.h2 className='font-bold text-2xl p-14 py-8 text-lime-500'
+          whileHover={{scale: 1.1}}
+          whileTap={{ scale: 0.9}}
+          >
+            Projects
+          </motion.h2>
+        <motion.h1 
+          className='font-bold text-2xl p-14 py-8 text-lime-500'
+          whileHover={{scale: 1.1}}
+          whileTap={{ scale: 0.9}}
+          >
+            GitHub
+          </motion.h1>
+      </motion.div>
     </motion.div>
   );
 }
