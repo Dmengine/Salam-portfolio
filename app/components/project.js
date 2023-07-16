@@ -44,7 +44,29 @@ const projects = [
         details: `
             This is an exceptional free online radio app that offers exclusive features. Now you can enjoy free live radio streaming without facing any problem.
             This free android radio app turns your phone into a portable radio. This radio app comes with AM FM radio stations that you can access from anywhere in the world.
-        `
+        `,
+        images: [
+            "./assets/images/RadioFm/Picture3.png",
+            "./assets/images/RadioFm/Picture4.png",
+            "./assets/images/RadioFm/Screenshot_20230707-004142.jpg",
+            "./assets/images/RadioFm/Screenshot_20230707-004313.jpg",
+        ],
+    },
+    {
+        name: 'RyiPay',
+        AppleStore: 'https://apps.apple.com/us/app/ryipay-wallet/id1620995066',
+        link: 'https://ryipay.app/',
+        details: `
+            RYIpay wallet app is built as a decentralized asset management tool for cryptocurrencies that are immune to inflation, confiscation, 
+            or censorship. It packs features designed to onboard investment-oriented individuals into a crypto ecosystem without headaches.
+        `,
+        images: [
+            "./assets/images/RyiPay/300x0w(1).webp",
+            "./assets/images/RyiPay/300x0w(2).webp",
+            "./assets/images/RyiPay/300x0w(3).webp",
+            "./assets/images/RyiPay/300x0w.webp",
+            "./assets/images/RyiPay/Screenshot_20230707-015444.jpg",
+        ]
     },
   ];
   
