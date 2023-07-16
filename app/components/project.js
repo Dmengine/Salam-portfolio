@@ -69,7 +69,64 @@ const projects = [
         ]
     },
     {
-        name: 'Safemoon',
+        name: 'Colorpay',
+        details: `
+            Introducing Colorpay, the revolutionary app that brings the power of group investing and seamless crypto transactions right at your fingertips. 
+            With Colorpay, you can effortlessly create or join investment groups, collaborate with like-minded individuals, and explore the exciting world of 
+            cryptocurrency together. Colorpay is the ultimate app for anyone interested in investing in cryptocurrency as a group. Whether you're a group of 
+            friends, colleagues, or even professionals within the crypto industry, Colorpay creates an empowering and secure platform for group investing. 
+            Join Colorpay today and embark on your group investment journey with confidence!
+        `,
+        images: [
+            "./assets/images/Colorpay/Screenshot_20230707-010804.jpg",
+            "./assets/images/Colorpay/Screenshot_20230707-010809.jpg",
+            "./assets/images/Colorpay/Screenshot_20230707-010812.jpg",
+            "./assets/images/Colorpay/Screenshot_20230707-010928_WhatsApp.jpg",
+        ]
+    },
+    {
+        name: 'Jhely',
+        details: `
+            3D Home.
+
+            3D home is a real estate app that allows users to list their properties for sale or for rentage. The app allows other users to purchase the listed properties. It captures a 360 image of a room. The captured room can be viewed in a 3d mode.
+            Not yet on app store but you can request for apk.
+            
+            As a mobile engineer, my task was to:
+            Find a solution or a way to capture a 3D image of an apartment using android devices the way Zillow tour app works using any framework of my choice.
+            Develop the application from designing to development stage and deployment stage.
+            Write clean and readable code.
+            Continuous maintenance and bug fix.
+            Integration off third party API e.g Google authentication API, Facebook authentication API.
+            Uploading the panorama image of every captured rooms in an apartment to the server.
+            API integration.
+            As a mobile engineer in my team, I made my research and find the solutions to the problem using native android development framework(JAVA) to develop the application successfully.
+            Skills:
+            Java.
+            Native Android development.
+        `,
+        images: [
+            "./assets/images/Jhely/Picture1.png",
+            "./assets/images/Jhely/Picture2.png",
+            "./assets/images/Jhely/Screenshot_20230707-013253_JHely.jpg",
+            "./assets/images/Jhely/Screenshot_20230707-013317_JHely.jpg",
+        ]
+    },
+    {
+        name: 'Posh',
+        details: `
+            POSH,
+            Is the only way to pay. It literally replaces your money with a safe and easy way to transfer money and make payments across the country privately. It can be in the store, in the taxi or sending money to friends and family. You might forget your wallet at home but not the posh app, it will save you in different occasions..
+            
+            Pay at your favorite places, send and receive money instantly, just pay the equivalent of $1 every month, get exclusive access to the city and enjoy your favorite places.
+            
+            With POSH, access your money wherever you are and unlock the city at your fingertips.
+        `,
+        images: [
+            "./assets/images/Posh/Screenshot_20230707-011729.jpg",
+            "./assets/images/Posh/Screenshot_20230707-014147.jpg",
+            "./assets/images/Posh/Screenshot_20230707-014252.jpg",
+        ]
     },
   ];
   
