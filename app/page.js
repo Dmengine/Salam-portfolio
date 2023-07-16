@@ -8,7 +8,7 @@ import Contact from './components/contact'
 export default function Home() {
   return (
     <main>
-      <div>
+      <div className='overflow-hidden'>
         <Header/>
         <Section1 />
         <Section2 />
