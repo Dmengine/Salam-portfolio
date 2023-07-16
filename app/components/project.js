@@ -68,6 +68,9 @@ const projects = [
             "./assets/images/RyiPay/Screenshot_20230707-015444.jpg",
         ]
     },
+    {
+        name: 'Safemoon',
+    },
   ];
   
   export default projects;
