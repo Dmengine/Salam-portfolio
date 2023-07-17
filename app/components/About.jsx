@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
-export default function Section2() {
+export default function About() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -39,7 +39,7 @@ export default function Section2() {
   };
 
   return (
-    <div className='sm:flex bg-indigo-700'>
+    <div className='sm:flex bg-indigo-700' id='about'>
       <div>
         <motion.div
           ref={ref}
